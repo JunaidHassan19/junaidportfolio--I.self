@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Junaid Hassan is a self web developer ">
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="images/js-logo.png" type="image/x-icon">
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="styles/swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/nav.css">
+    <title>Junaid Hassan -exploring technologies</title>
+</head>
+
+<body>
+    <!--============================= HEADER ====================================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Junaid Hassan</a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+
+                    <!---================================Chat bot==========================--->
+                    <li class="nav__item">
+                        <a href="#Js" id="chatButton"  class="nav__link">
+                            <svg class="nav__link-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                                height="24">
+                                <path fill="none" d="M0 0h24v24H0z" />
+                                <path
+                                    d="M14 3v2H4v13.385L5.763 17H20v-7h2v8a1 1 0 0 1-1 1H6.455L2 22.5V4a1 1 0 0 1 1-1h11zm5 0V0h2v3h3v2h-3v3h-2V5h-3V3h3z" />
+                            </svg>
+                            Chat Bot
+                         </a>
+                    </li>
+                    <!---================================Chat bot===========================--->
+
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link  active-link">
+                            <svg class="nav__link-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                                height="24">
+                                <path fill="none" d="M0 0h24v24H0z" />
+                                <path
+                                    d="M6 19h12V9.157l-6-5.454-6 5.454V19zm13 2H5a1 1 0 0 1-1-1v-9H1l10.327-9.388a1 1 0 0 1 1.346 0L23 11h-3v9a1 1 0 0 1-1 1zM7.5 13h2a2.5 2.5 0 1 0 5 0h2a4.5 4.5 0 1 1-9 0z" />
+                            </svg>
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#qualification" class="nav__link">
+                            <svg class="nav__link-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                                height="24">
+                                <path fill="none" d="M0 0h24v24H0z" />
+                                <path
+                                    d="M12.414 5H21a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h7.414l2 2zM4 5v14h16V7h-8.414l-2-2H4zm4 13a4 4 0 1 1 8 0H8zm4-5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z" />
+                            </svg>
+                            About Me</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <svg class="nav__link-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                                height="24">
+                                <path fill="none" d="M0 0h24v24H0z" />
+                                <path
+                                    d="M13 16.938V19h5v2H6v-2h5v-2.062A8.001 8.001 0 0 1 4 9V3h16v6a8.001 8.001 0 0 1-7 7.938zM6 5v4a6 6 0 1 0 12 0V5H6zM1 5h2v4H1V5zm20 0h2v4h-2V5z" />
+                            </svg>
+                            Skills</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#certificates" class="nav__link">
+                            <svg class="nav__link-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                                height="24">
+                                <path fill="none" d="M0 0h24v24H0z" />
+                                <path
+                                    d="M7 5V2a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v3h4a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h4zM4 16v3h16v-3H4zm0-2h16V7H4v7zM9 3v2h6V3H9zm2 8h2v2h-2v-2z" />
+                            </svg>
+                            Certifications</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#projects" class="nav__link">
+                            <svg class="nav__link-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                                height="24">
+                                <path fill="none" d="M0 0h24v24H0z" />
+                                <path
+                                    d="M7 5V2a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v3h4a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h4zM4 16v3h16v-3H4zm0-2h16V7H4v7zM9 3v2h6V3H9zm2 8h2v2h-2v-2z" />
+                            </svg>
+                            Projects</a>
+                    </li>
+                    
+                    <!-- <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <svg class="nav__link-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                                height="24">
+                                <path fill="none" d="M0 0h24v24H0z" />
+                                <path
+                                    d="M14 3v2H4v13.385L5.763 17H20v-7h2v8a1 1 0 0 1-1 1H6.455L2 22.5V4a1 1 0 0 1 1-1h11zm5 0V0h2v3h3v2h-3v3h-2V5h-3V3h3z" />
+                            </svg>
+                            Contact</a>
+                    </li> -->
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+
+                    <!-- <i class="ri-close-line"></i> -->
+                    <svg class="close-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                        height="24">
+                        <path fill="none" d="M0 0h24v24H0z" />
+                        <path
+                            d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z" />
+                    </svg>
+                </div>
+
+            </div>
+
+            <div class="nav__buttons">
+                <!--Theme chnage-->
+                <!-- <i class="ri-moon-line change-theme" id="theme-button"></i> -->
+                <svg class="change-theme" id="theme-button" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                    width="24" height="24">
+                    <path fill="none" d="M0 0h24v24H0z" />
+                    <path
+                        d="M10 7a7 7 0 0 0 12 4.9v.1c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2h.1A6.979 6.979 0 0 0 10 7zm-6 5a8 8 0 0 0 15.062 3.762A9 9 0 0 1 8.238 4.938 7.999 7.999 0 0 0 4 12z" />
+                </svg>
+                <svg class="nav-icon hide-sun" id="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                    width="24" height="24">
+                    <path fill="none" d="M0 0h24v24H0z" />
+                    <path
+                        d="M12 18a6 6 0 1 1 0-12 6 6 0 0 1 0 12zm0-2a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM11 1h2v3h-2V1zm0 19h2v3h-2v-3zM3.515 4.929l1.414-1.414L7.05 5.636 5.636 7.05 3.515 4.93zM16.95 18.364l1.414-1.414 2.121 2.121-1.414 1.414-2.121-2.121zm2.121-14.85l1.414 1.415-2.121 2.121-1.414-1.414 2.121-2.121zM5.636 16.95l1.414 1.414-2.121 2.121-1.414-1.414 2.121-2.121zM23 11v2h-3v-2h3zM4 11v2H1v-2h3z" />
+                </svg>
+                <div class="nav__toggle" id="nav-toggle">
+                    <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                        height="24">
+                        <path fill="none" d="M0 0h24v24H0z" />
+                        <path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z" />
+                    </svg>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+
+    <main class="main">
+        <section class="home section" id="home">
+            <div class="home__container container section__border">
+                <div class="home__data">
+                    <h1 class="wave__hi"> <span class="wave">👋</span>
+                        <span class="say__hi">Hey! How have you been?</span>
+                    </h1>
+
+                    <div class="banner__container">
+                        <div class="banner_description">
+                            <h1 class="type__text">I am Junaid Hassan<br />
+                                <span class="ityped"></span>
+                            </h1>
+
+
+                            <div class="cv__btn-home">
+                                <a href="images/My Resume.pdf" class="cv__btn primary-button" download>
+                                    <svg class="btn-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                        width="24" height="24">
+                                        <path fill="none" d="M0 0h24v24H0z" />
+                                        <path
+                                            d="M4 19h16v-7h2v8a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-8h2v7zM14 9h5l-7 7-7-7h5V3h4v6z" />
+                                    </svg>
+
+
+                                    Download Resume</a>
+
+                                <a href="#contact" class="cv__btn ">
+                                    <svg class="btn-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                        width="24" height="24">
+                                        <path fill="none" d="M0 0h24v24H0z" />
+                                        <path
+                                            d="M1.923 9.37c-.51-.205-.504-.51.034-.689l19.086-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.475.553-.717.07L11 13 1.923 9.37zm4.89-.2l5.636 2.255 3.04 6.082 3.546-12.41L6.812 9.17z" />
+                                    </svg>
+                                    Contact Me </a>
+                            </div>
+
+                        </div>
+
+                        <div>
+                            <div class="banner__img">
+                                <img src="svg/homeimg2.png" alt="web developer image home page">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div>
+
+                        <ul class="banner__social">
+                            <li> <a href="https://www.linkedin.com/in/junaidhassan19/" target="_blank"
+                                    class="home__social-link">
+                                    <svg class="common-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                        width="24" height="24">
+                                        <path fill="none" d="M0 0h24v24H0z" />
+                                        <path
+                                            d="M4 3h16a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm1 2v14h14V5H5zm2.5 4a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm-1 1h2v7.5h-2V10zm5.5.43c.584-.565 1.266-.93 2-.93 2.071 0 3.5 1.679 3.5 3.75v4.25h-2v-4.25a1.75 1.75 0 0 0-3.5 0v4.25h-2V10h2v.43z" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/JunaidHassan19" target="_blank" class="home__social-link">
+                                    <svg class="common-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                        width="24" height="24">
+                                        <path fill="none" d="M0 0h24v24H0z" />
+                                        <path
+                                            d="M5.883 18.653c-.3-.2-.558-.455-.86-.816a50.32 50.32 0 0 1-.466-.579c-.463-.575-.755-.84-1.057-.949a1 1 0 0 1 .676-1.883c.752.27 1.261.735 1.947 1.588-.094-.117.34.427.433.539.19.227.33.365.44.438.204.137.587.196 1.15.14.023-.382.094-.753.202-1.095C5.38 15.31 3.7 13.396 3.7 9.64c0-1.24.37-2.356 1.058-3.292-.218-.894-.185-1.975.302-3.192a1 1 0 0 1 .63-.582c.081-.024.127-.035.208-.047.803-.123 1.937.17 3.415 1.096A11.731 11.731 0 0 1 12 3.315c.912 0 1.818.104 2.684.308 1.477-.933 2.613-1.226 3.422-1.096.085.013.157.03.218.05a1 1 0 0 1 .616.58c.487 1.216.52 2.297.302 3.19.691.936 1.058 2.045 1.058 3.293 0 3.757-1.674 5.665-4.642 6.392.125.415.19.879.19 1.38a300.492 300.492 0 0 1-.012 2.716 1 1 0 0 1-.019 1.958c-1.139.228-1.983-.532-1.983-1.525l.002-.446.005-.705c.005-.708.007-1.338.007-1.998 0-.697-.183-1.152-.425-1.36-.661-.57-.326-1.655.54-1.752 2.967-.333 4.337-1.482 4.337-4.66 0-.955-.312-1.744-.913-2.404a1 1 0 0 1-.19-1.045c.166-.414.237-.957.096-1.614l-.01.003c-.491.139-1.11.44-1.858.949a1 1 0 0 1-.833.135A9.626 9.626 0 0 0 12 5.315c-.89 0-1.772.119-2.592.35a1 1 0 0 1-.83-.134c-.752-.507-1.374-.807-1.868-.947-.144.653-.073 1.194.092 1.607a1 1 0 0 1-.189 1.045C6.016 7.89 5.7 8.694 5.7 9.64c0 3.172 1.371 4.328 4.322 4.66.865.097 1.201 1.177.544 1.748-.192.168-.429.732-.429 1.364v3.15c0 .986-.835 1.725-1.96 1.528a1 1 0 0 1-.04-1.962v-.99c-.91.061-1.662-.088-2.254-.485z" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/junaidhassan_19" target="_blank" class="home__social-link">
+                                    <svg class="common-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                        width="24" height="24">
+                                        <path fill="none" d="M0 0h24v24H0z" />
+                                        <path
+                                            d="M15.3 5.55a2.9 2.9 0 0 0-2.9 2.847l-.028 1.575a.6.6 0 0 1-.68.583l-1.561-.212c-2.054-.28-4.022-1.226-5.91-2.799-.598 3.31.57 5.603 3.383 7.372l1.747 1.098a.6.6 0 0 1 .034.993L7.793 18.17c.947.059 1.846.017 2.592-.131 4.718-.942 7.855-4.492 7.855-10.348 0-.478-1.012-2.141-2.94-2.141zm-4.9 2.81a4.9 4.9 0 0 1 8.385-3.355c.711-.005 1.316.175 2.669-.645-.335 1.64-.5 2.352-1.214 3.331 0 7.642-4.697 11.358-9.463 12.309-3.268.652-8.02-.419-9.382-1.841.694-.054 3.514-.357 5.144-1.55C5.16 15.7-.329 12.47 3.278 3.786c1.693 1.977 3.41 3.323 5.15 4.037 1.158.475 1.442.465 1.973.538z" />
+                                    </svg>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="mailto:thejunni01@gmail.com" target="_blank" class="home__social-link">
+                                    <svg class="common-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                        width="24" height="24">
+                                        <path fill="none" d="M0 0h24v24H0z" />
+                                        <path
+                                            d="M3 3h18a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm17 4.238l-7.928 7.1L4 7.216V19h16V7.238zM4.511 5l7.55 6.662L19.502 5H4.511z" />
+                                    </svg>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="https://devfolio.co/@Junaidhassan" target="_blank" class="home__social-link">
+                                    <svg class="common-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                        width="24" height="24">
+                                        <path fill="none" d="M0 0h24v24H0z" />
+                                        <path
+                                            d="M6.414 16L16.556 5.858l-1.414-1.414L5 14.586V16h1.414zm.829 2H3v-4.243L14.435 2.322a1 1 0 0 1 1.414 0l2.829 2.829a1 1 0 0 1 0 1.414L7.243 18zM3 20h18v2H3v-2z" />
+                                    </svg>
+                                </a>
+                            </li>
+
+                            
+
+
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="qualification section" id="qualification">
+            <h2 class="section__title">About Me</h2>
+            <span class="section__subtitle">Get to know me</span>
+
+            <div class=" container grid section__border">
+                <div class="about__grid">
+                    <div class="about__img">
+                        <img src="svg/about2.webp" alt="web developer introduction">
+                    </div>
+                    <div class="about__right">
+                        <div>
+                            <h2 class="about__intro">
+                                <span>Let me</span>
+                                <span>Introduce</span>
+                                <span>Myself</span>
+                            </h2>
+                        </div>
+                        <div>
+                            <p class="qualification__info">
+                                I’m Junaid Hassan, a BCA student at Amar Singh College in Srinagar, Jammu and Kashmir. As a passionate learner, I’m constantly exploring new programming languages and technologies. Every project I create is a testament to my dedication and growing expertise in web development. My showcase websites and interactive applications reflect my creativity and technical skills. I draw inspiration from the stunning landscapes of the Kashmir Valley, which fuels my innovative spirit. Consistency and a commitment to excellence guide my work, as I believe these qualities are the keys to success.
+                            </p>
+                        </div>
+
+                        <div class="cv__btn-home">
+                            <a href="images/My Resume.pdf" class="cv__btn primary-button" download>
+
+                                <svg class="btn-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                                    height="24">
+                                    <path fill="none" d="M0 0h24v24H0z" />
+                                    <path
+                                        d="M4 19h16v-7h2v8a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-8h2v7zM14 9h5l-7 7-7-7h5V3h4v6z" />
+                                </svg>
+
+                                Download Resume</a>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+            </div>
+        </section>
+
+        <section class="skills section" id="skills">
+            <h2 class="section__title">Skills</h2>
+            <span class="section__subtitle">
+                What I know
+            </span>
+
+            <div class="skills__container container grid section__border">
+
+                <div class="skills__content">
+                    <h3 class="skills__title">
+                        <svg class="skill-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                            height="24">
+                            <path fill="none" d="M0 0h24v24H0z" />
+                            <path
+                                d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z" />
+                        </svg>
+                        Primary Skiils
+                    </h3>
+
+                    <div class="skills__info">
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="svg/html-1.svg" alt="HTML">
+                            </div>
+
+                            <h3 class="skills__name">HTML5</h3>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="svg/css-3.svg" alt="CSS">
+                            </div>
+
+                            <h3 class="skills__name">CSS3</h3>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="svg/logo-javascript.svg" alt="JavaScript">
+                            </div>
+
+                            <h3 class="skills__name">JavaScript</h3>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="svg/jquery.png" alt="REACTJS">
+                            </div>
+
+                            <h3 class="skills__name">jQuery</h3>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="svg/bootstrap-5-1.svg" alt="BOOTSTRAP">
+                            </div>
+
+                            <h3 class="skills__name">Bootstrap</h3>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="svg/tailwind.jpeg" alt="Tailwind">
+                            </div>
+
+                            <h3 class="skills__name">Tailwind</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills__content">
+                    <h3 class="skills__title">
+                        <svg class="skill-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                            height="24">
+                            <path fill="none" d="M0 0h24v24H0z" />
+                            <path
+                                d="M5.33 3.271a3.5 3.5 0 0 1 4.254 4.963l10.709 10.71-1.414 1.414-10.71-10.71a3.502 3.502 0 0 1-4.962-4.255L5.444 7.63a1.5 1.5 0 1 0 2.121-2.121L5.329 3.27zm10.367 1.884l3.182-1.768 1.414 1.414-1.768 3.182-1.768.354-2.12 2.121-1.415-1.414 2.121-2.121.354-1.768zm-6.718 8.132l1.414 1.414-5.303 5.303a1 1 0 0 1-1.492-1.327l.078-.087 5.303-5.303z" />
+                        </svg>
+                        Other Skills
+                    </h3>
+
+                    <div class="skills__info">
+
+
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="svg/loading.png" alt="Loading">
+                            </div>
+
+                            <h3 class="skills__name">Loading...</h3>
+                        </div>
+
+
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="svg/loading.png" alt="Loading">
+                            </div>
+
+                            <h3 class="skills__name">Loading...</h3>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="svg/loading.png" alt="Loading">
+                            </div>
+
+                            <h3 class="skills__name">Loading...</h3>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="svg/loading.png" alt="Loading">
+                            </div>
+
+                            <h3 class="skills__name">Loading...</h3>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="svg/loading.png" alt="Loading">
+                            </div>
+
+                            <h3 class="skills__name">Loading...</h3>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="svg/loading.png" alt="Loading">
+                            </div>
+
+                            <h3 class="skills__name">Loading...</h3>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section class="certs section" id="certificates">
+            <h2 class="section__title">Certifications</h2>
+            <span class="section__subtitle">What I have done</span>
+
+            <div class="certs__container container grid section__border">
+                <div class="slide-container swiper">
+                    <div class="slide-content">
+                        <div class="card-wrapper swiper-wrapper">
+                            <div class="card swiper-slide">
+
+                                <div class="card-content">
+                                    <h2 class="name">
+                                        <span class="cert-icon-container">
+                                            <svg class="certs-icon" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 24 24" width="24" height="24">
+                                                <path fill="none" d="M0 0h24v24H0z" />
+                                                <path
+                                                d="M2.8 14h2.04l-.545 2.725 5.744 2.154 7.227-2.41L18.36 11H3.4l.4-2h14.96l.8-4H4.6L5 3h17l-3 15-9 3-8-3z" />
+                                            </svg>
+                                        </span>
+                                        <span>Year 2024</span>
+                                    </h2>
+                                    <h2 class="description">
+                                        Certificate of Completion for CSS from Great Learning.
+                                    </h2>
+                                    <a target="_blank"
+                                        href="https://www.mygreatlearning.com/certificate/NEDEOSAP"
+                                        class="button">View Certificate</a>
+                                </div>
+                            </div>
+
+                            <div class="card swiper-slide">
+
+                                <div class="card-content">
+                                    <h2 class="name">
+                                        <span class="cert-icon-container">
+                                            <svg class="certs-icon" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 24 24" width="24" height="24">
+                                                <path fill="none" d="M0 0h24v24H0z" />
+                                                <path
+                                                d="M17 15.245v6.872a.5.5 0 0 1-.757.429L12 20l-4.243 2.546a.5.5 0 0 1-.757-.43v-6.87a8 8 0 1 1 10 0zm-8 1.173v3.05l3-1.8 3 1.8v-3.05A7.978 7.978 0 0 1 12 17a7.978 7.978 0 0 1-3-.582zM12 15a6 6 0 1 0 0-12 6 6 0 0 0 0 12z" />
+                                            </svg>
+
+                                        </span>
+                                        <span>Year 2024</span>
+                                    </h2>
+                                    <h2 class="description">
+                                        Certificate of Completion for Bootstrap from Great Learning.
+                                    </h2>
+                                    <a target="_blank" href="https://www.mygreatlearning.com/certificate/HTBDRZEO"
+                                        class="button">View Certificate</a>
+                                </div>
+                            </div>
+
+                            <div class="card swiper-slide">
+
+                                <div class="card-content">
+                                    <h2 class="name">
+                                        <span class="cert-icon-container">
+                                            <svg class="certs-icon" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 24 24" width="24" height="24">
+                                                <path fill="none" d="M0 0h24v24H0z" />
+                                                <path
+                                                d="M17 15.245v6.872a.5.5 0 0 1-.757.429L12 20l-4.243 2.546a.5.5 0 0 1-.757-.43v-6.87a8 8 0 1 1 10 0zm-8 1.173v3.05l3-1.8 3 1.8v-3.05A7.978 7.978 0 0 1 12 17a7.978 7.978 0 0 1-3-.582zM12 15a6 6 0 1 0 0-12 6 6 0 0 0 0 12z" />
+                                            </svg>
+                                        </span>
+                                        <span>Year 2024</span>
+                                    </h2>
+                                    <h2 class="description">
+                                        Certificate of Completion for Artificial Intelligence Fundamentals.
+                                    </h2>
+                                    <a target="_blank"
+                                        href="https://www.mygreatlearning.com/certificate/XWLXHORW"
+                                        class="button">View Certificate</a>
+                                </div>
+                            </div>
+
+                            <!----==============Add more certificates here=====================-->
+
+                            <!-- <div class="card swiper-slide">      
+
+                                <div class="card-content">
+                                    <h2 class="name">
+                                        <span class="cert-icon-container">
+                                            <svg class="certs-icon" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 24 24" width="24" height="24">
+                                                <path fill="none" d="M0 0h24v24H0z" />
+                                                <path
+                                                    d="M17 15.245v6.872a.5.5 0 0 1-.757.429L12 20l-4.243 2.546a.5.5 0 0 1-.757-.43v-6.87a8 8 0 1 1 10 0zm-8 1.173v3.05l3-1.8 3 1.8v-3.05A7.978 7.978 0 0 1 12 17a7.978 7.978 0 0 1-3-.582zM12 15a6 6 0 1 0 0-12 6 6 0 0 0 0 12z" />
+                                            </svg>
+                                        </span>
+                                        <span>date</span>
+                                    </h2>
+                                    <h2 class="description">
+                                        ----------for--------------
+                                    </h2>
+                                    <a target="_blank" href="----------link---------"
+                                        class="button">View Certificate</a>
+                                </div>
+                            </div> -->
+
+                            <!-- <div class="card swiper-slide">
+
+                                <div class="card-content">
+                                    <h2 class="name">
+                                        <span class="cert-icon-container">
+                                            <svg class="certs-icon" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 24 24" width="24" height="24">
+                                                <path fill="none" d="M0 0h24v24H0z" />
+                                                <path
+                                                    d="M17 15.245v6.872a.5.5 0 0 1-.757.429L12 20l-4.243 2.546a.5.5 0 0 1-.757-.43v-6.87a8 8 0 1 1 10 0zm-8 1.173v3.05l3-1.8 3 1.8v-3.05A7.978 7.978 0 0 1 12 17a7.978 7.978 0 0 1-3-.582zM12 15a6 6 0 1 0 0-12 6 6 0 0 0 0 12z" />
+                                            </svg>
+                                        </span>
+                                        <span>-------</span>
+                                    </h2>
+                                    <h2 class="description">
+                                        -------------------------
+                                    </h2>
+                                    <a target="_blank"
+                                        href="---------------"
+                                        class="button">View Certificate</a>
+                                </div>
+                            </div> -->
+
+                            <!-- <div class="card swiper-slide">
+
+                                <div class="card-content">
+                                    <h2 class="name">
+                                        <span class="cert-icon-container">
+                                            <svg class="certs-icon" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 24 24" width="24" height="24">
+                                                <path fill="none" d="M0 0h24v24H0z" />
+                                                <path
+                                                    d="M2.8 14h2.04l-.545 2.725 5.744 2.154 7.227-2.41L18.36 11H3.4l.4-2h14.96l.8-4H4.6L5 3h17l-3 15-9 3-8-3z" />
+                                            </svg>
+
+                                        </span>
+                                        <span>date=====</span>
+                                    </h2>
+                                    <h2 class="description">
+                                        ------------------
+                                    </h2>
+                                    <a href="---------------------"
+                                        target="_blank" class="button">View Certificate</a>
+                                </div>
+                            </div> -->
+
+                        </div>
+                    </div>
+
+                    <div class="swiper-button-next swiper-navBtn"></div>
+                    <div class="swiper-button-prev swiper-navBtn"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+
+        </section>
+
+
+
+        <section class="portfolio section" id="projects">
+            <h2 class="section__title">Projects</h2>
+            <span class="section__subtitle">Know my work</span>
+            <div class="projects__container container grid section__border">
+                <div class="row">
+                    <div class="filter-buttons">
+                        <ul id="filter-btns">
+                            <li class="active" data-target="all">All</li>
+                            <li data-target="JavaScript">JavaScript Projects</li>
+                            <li data-target="CSS">Css Projects</li>
+                            <!-- <li data-target="ReactJs">ReactJs Projects</li> -->
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="project-listing">
+                    <div class="project-card" data-id="JavaScript">
+
+                        <h1 class="prj_name">Snake Game</h1>
+                        <div>
+                            <ul class="tech_stack">
+                                <p>Tech Stack Used:</p>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                            </ul>
+
+                        </div>
+                        <div class="know_more_container">
+                            <button id="snake-cta" class="know_more">View Project</button>
+
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-id="JavaScript">
+
+                        <h1 class="prj_name">First Portfolio</h1>
+                        <div>
+                            <ul class="tech_stack">
+                                <p>Tech Stack Used:</p>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                            </ul>
+
+                        </div>
+                        <div class="know_more_container">
+                            <button id="firstport-cta" class="know_more">View Project</button>
+
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-id="JavaScript">
+                        <h1 class="prj_name">Modern Portfolio</h1>
+                        <div>
+                            <ul class="tech_stack">
+                                <p>Tech Stack Used:</p>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                            </ul>
+
+                        </div>
+                        <div class="know_more_container">
+                            <button id="portfolio-cta" class="know_more">View Project</button>
+
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-id="JavaScript">
+                        <h1 class="prj_name">AI-powered chatbot</h1>
+                        <div>
+                            <ul class="tech_stack">
+                                <p>Tech Stack Used:</p>
+                                <li>Logic</li>
+                                <li>Hardwork</li>
+                            </ul>
+
+                        </div>
+                        <div class="know_more_container">
+                            <button id="chatbot-cta" class="know_more">View Project</button>
+
+                        </div>
+                    </div>
+                        <!--========================= Add More projects ===========================-->
+                    <!-- <div class="project-card" data-id="JavaScript">
+                        <h1 class="prj_name">-------</h1>
+                        <div>
+                            <ul class="tech_stack">
+                                <p>Tech Stack Used:</p>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                            </ul>
+
+                        </div>
+                        <div class="know_more_container">
+                            <button id="clock-cta" class="know_more">Know More...</button>
+
+                        </div>
+                    </div> -->
+
+
+
+                    <div class="project-card" data-id="CSS">
+                        <h1 class="prj_name">Friend List</h1>
+                        <div>
+                            <ul class="tech_stack">
+                                <p>Tech Stack Used:</p>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                            </ul>
+
+                        </div>
+                        <div class="know_more_container">
+                            <button id="grid-cta" class="know_more">View Project</button>
+
+                        </div>
+
+                    </div>
+
+                    <div class="project-card" data-id="CSS">
+                        <h1 class="prj_name">Youtube index</h1>
+                        <div>
+                            <ul class="tech_stack">
+                                <p>Tech Stack Used:</p>
+                                <li>HTML</li>
+                                <li>CSS</li>
+
+                            </ul>
+
+                        </div>
+                        <div class="know_more_container">
+                            <button id="youtube-cta" class="know_more">View Project</button>
+
+                        </div>
+
+                    </div>
+                    <div class="project-card" data-id="CSS">
+                        <h1 class="prj_name">Google</h1>
+                        <div>
+                            <ul class="tech_stack">
+                                <p>Tech Stack Used:</p>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                            </ul>
+
+                        </div>
+                        <div class="know_more_container">
+                            <button id="google-cta" class="know_more">View Project</button>
+
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-id="CSS">
+                        <h1 class="prj_name">Discord</h1>
+                        <div>
+                            <ul class="tech_stack">
+                                <p>Tech Stach Used:</p>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                            </ul>
+
+                        </div>
+                        <div class="know_more_container">
+                            <button id="discord-cta" class="know_more">View Project</button>
+
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-id="CSS">
+                        <h1 class="prj_name">More</h1>
+                        <div>
+                            <ul class="tech_stack">
+                                <p>Tech Stack Used:</p>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                            </ul>
+
+                        </div>
+                        <div class="know_more_container">
+                            <button id="more-cta" class="know_more">View Project</button>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </section>
+
+        <!--Project MOdals-->
+        <div class="modal-container">
+            <div id="myModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div> <span class="close">&times;</span></div>
+                    <div id="modal-info"></div>
+                </div>
+            </div>
+            <div class="overlay-modal hidden"></div>
+
+        </div>
+        <section class="contact section" id="contact">
+            <h2 class="section__title">Contact Me</h2>
+            <span class="section__subtitle">Get in touch</span>
+
+            <div class="contact__container container grid ">
+
+
+                <!-- <div class="contact-left">
+                    <img src="svg/contact-us.png" alt="">    if you want to add contact svg on webpage then uncomment this 
+                </div> -->
+
+                <div class="contact__content ">
+                    <h3 class="contact__title">
+                        <svg class="skill-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                            height="24">
+                            <path fill="none" d="M0 0h24v24H0z" />
+                            <path
+                                d="M7.291 20.824L2 22l1.176-5.291A9.956 9.956 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10a9.956 9.956 0 0 1-4.709-1.176zm.29-2.113l.653.35A7.955 7.955 0 0 0 12 20a8 8 0 1 0-8-8c0 1.334.325 2.618.94 3.766l.349.653-.655 2.947 2.947-.655zM7 12h2a3 3 0 0 0 6 0h2a5 5 0 0 1-10 0z" />
+                        </svg>
+                        Talk to me
+                    </h3>
+
+                    <div class="contact__info">
+                        <div class="contact__data">
+                            <div class="contact_data-main">
+
+
+                            <a href="mailto:thejunni@gmail.com">
+                                <span class="contact__data-title">
+                                    <svg class="contact-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                        width="24" height="24">
+                                        <path fill="none" d="M0 0h24v24H0z" />
+                                        <path
+                                            d="M20 12a8 8 0 1 0-3.562 6.657l1.11 1.664A9.953 9.953 0 0 1 12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10v1.5a3.5 3.5 0 0 1-6.396 1.966A5 5 0 1 1 15 8H17v5.5a1.5 1.5 0 0 0 3 0V12zm-8-3a3 3 0 1 0 0 6 3 3 0 0 0 0-6z" />
+                                    </svg>
+                                </span>
+                            </a>
+
+
+                                <div> <span class="contact__data-info">thejunni01@gmail.com</span>
+                                    <div class="flex-center">
+                                        <a href="mailto:thejunni01@gmail.com" class="contact__button">
+                                            Write to me
+                                            <svg class="svg-arrow" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 24 24" width="24" height="24">
+                                                <path fill="none" d="M0 0h24v24H0z" />
+                                                <path
+                                                    d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="contact__data">
+                            <div class="contact_data-main">
+
+
+                            <!-- <a href="https://maps.app.goo.gl/RFp2XA6JsMkN3tqWA"> -->
+                                <span class="contact__data-title">
+                                    <svg class="contact-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                        width="24" height="24">
+                                        <path fill="none" d="M0 0h24v24H0z" />
+                                        <path
+                                            d="M12 20.9l4.95-4.95a7 7 0 1 0-9.9 0L12 20.9zm0 2.828l-6.364-6.364a9 9 0 1 1 12.728 0L12 23.728zM12 13a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0 2a4 4 0 1 1 0-8 4 4 0 0 1 0 8z" />
+                                    </svg>
+                                </span>
+                            <!-- </a> -->
+
+
+                                <div>
+                                    <span class="contact__data-info">___ J&K</span>
+                                    <div class="flex-center">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                
+
+                <div class="contact__content">
+                    <h3 class="contact__title">
+                        <svg class="skill-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                            height="24">
+                            <path fill="none" d="M0 0h24v24H0z" />
+                            <path
+                                d="M1.923 9.37c-.51-.205-.504-.51.034-.689l19.086-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.475.553-.717.07L11 13 1.923 9.37zm4.89-.2l5.636 2.255 3.04 6.082 3.546-12.41L6.812 9.17z" />
+                        </svg>
+                        Have some project?
+                    </h3>
+
+                    <form  action="https://formsubmit.co/thejunni01@gmail.com" method="POST" class="contact__form" id="contact-form">
+                    <form method="POST" class="contact__form" id="contact-form">
+
+                        <div class="contact__form-div">
+                            <label class="contact__form-tag">Name</label>
+                            <input type="text" placeholder="Your name" name="user_fname" class="contact__form-input"
+                                id="contact-name" required>
+                        </div>
+
+                        <div class="contact__form-div">
+                            <label class="contact__form-tag">Mail</label>
+                            <input type="email" placeholder="Your email" name="user_emailid" class="contact__form-input"
+                                id="contact-email" required>
+                        </div>
+
+                        <!-- <input type="hidden" name="_next" value="https://superlative-elf-758ce6.netlify.app/thanks.html">
+                        <input type="hidden" name="_autoresponse" value="Thanks for getting in touch.Will get back to you on this as soon as possible."> -->
+                        <div class="contact__form-div contact__form-area">
+                            <label class="contact__form-tag">Project</label>
+                            <textarea name="user_info" class="contact__form-input" id="contact-project"
+                                placeholder="Type your message " required></textarea>
+                        </div>
+
+                        <p class="contact__message" id="contact-message"></p>
+
+                        <div class="contact__btn-container ">
+                            <button type="submit" class="cv__btn primary-button" id="send_btn">
+                                Send
+                                <svg class="send-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                                    height="24">
+                                    <path fill="none" d="M0 0h24v24H0z" />
+                                    <path
+                                        d="M1.923 9.37c-.51-.205-.504-.51.034-.689l19.086-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.475.553-.717.07L11 13 1.923 9.37zm4.89-.2l5.636 2.255 3.04 6.082 3.546-12.41L6.812 9.17z" />
+                                </svg>
+                            </button>
+                        </div>
+
+                    </form>
+
+                </div>
+
+            
+
+            </div>
+        </section>
+
+        <div class="modal-container">
+            <div id="contact-modal" class="thanks-modal">
+
+                <!-- Modal content -->
+                <div class="thanks-modal-content">
+                    <div>
+                        <span class="close" id="close-contact">&times;</span>
+                    </div>
+
+                    <div class="thanks-msg" id="thanks-msg"></div>
+
+
+                </div>
+
+            </div>
+            <div class="overlay-modal hidden"></div>
+
+        </div>
+
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+        <div>
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                    <path id="gentle-wave"
+                        d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="parallax">
+                    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                    <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+                </g>
+            </svg>
+        </div>
+
+        <div class="footer__container container">
+            <span class="made_with">Made with
+                <svg class="svg-heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <!-- ! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2024 Fonticons, Inc. -->
+                    <path
+                        d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z" />
+                </svg>
+                by Junaid Hassan </span>
+
+            <ul class="banner__social footer__social">
+                <li> <a href="https://www.linkedin.com/in/junaidhassan19/" target="_blank" class="home__social-link">
+                        <!-- <i class="ri-linkedin-box-line ico"></i> -->
+                        <svg class="common-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                            height="24">
+                            <path fill="none" d="M0 0h24v24H0z" />
+                            <path
+                                d="M4 3h16a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm1 2v14h14V5H5zm2.5 4a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm-1 1h2v7.5h-2V10zm5.5.43c.584-.565 1.266-.93 2-.93 2.071 0 3.5 1.679 3.5 3.75v4.25h-2v-4.25a1.75 1.75 0 0 0-3.5 0v4.25h-2V10h2v.43z" />
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/junaidhassan19/" target="_blank" class="home__social-link">
+                        <!-- <i class="ri-github-line"></i> -->
+                        <svg class="common-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                            height="24">
+                            <path fill="none" d="M0 0h24v24H0z" />
+                            <path
+                                d="M5.883 18.653c-.3-.2-.558-.455-.86-.816a50.32 50.32 0 0 1-.466-.579c-.463-.575-.755-.84-1.057-.949a1 1 0 0 1 .676-1.883c.752.27 1.261.735 1.947 1.588-.094-.117.34.427.433.539.19.227.33.365.44.438.204.137.587.196 1.15.14.023-.382.094-.753.202-1.095C5.38 15.31 3.7 13.396 3.7 9.64c0-1.24.37-2.356 1.058-3.292-.218-.894-.185-1.975.302-3.192a1 1 0 0 1 .63-.582c.081-.024.127-.035.208-.047.803-.123 1.937.17 3.415 1.096A11.731 11.731 0 0 1 12 3.315c.912 0 1.818.104 2.684.308 1.477-.933 2.613-1.226 3.422-1.096.085.013.157.03.218.05a1 1 0 0 1 .616.58c.487 1.216.52 2.297.302 3.19.691.936 1.058 2.045 1.058 3.293 0 3.757-1.674 5.665-4.642 6.392.125.415.19.879.19 1.38a300.492 300.492 0 0 1-.012 2.716 1 1 0 0 1-.019 1.958c-1.139.228-1.983-.532-1.983-1.525l.002-.446.005-.705c.005-.708.007-1.338.007-1.998 0-.697-.183-1.152-.425-1.36-.661-.57-.326-1.655.54-1.752 2.967-.333 4.337-1.482 4.337-4.66 0-.955-.312-1.744-.913-2.404a1 1 0 0 1-.19-1.045c.166-.414.237-.957.096-1.614l-.01.003c-.491.139-1.11.44-1.858.949a1 1 0 0 1-.833.135A9.626 9.626 0 0 0 12 5.315c-.89 0-1.772.119-2.592.35a1 1 0 0 1-.83-.134c-.752-.507-1.374-.807-1.868-.947-.144.653-.073 1.194.092 1.607a1 1 0 0 1-.189 1.045C6.016 7.89 5.7 8.694 5.7 9.64c0 3.172 1.371 4.328 4.322 4.66.865.097 1.201 1.177.544 1.748-.192.168-.429.732-.429 1.364v3.15c0 .986-.835 1.725-1.96 1.528a1 1 0 0 1-.04-1.962v-.99c-.91.061-1.662-.088-2.254-.485z" />
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/junaidhassan_19" target="_blank" class="home__social-link">
+                        <!-- <i class="ri-twitter-line"></i> -->
+                        <svg class="common-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                            height="24">
+                            <path fill="none" d="M0 0h24v24H0z" />
+                            <path
+                                d="M15.3 5.55a2.9 2.9 0 0 0-2.9 2.847l-.028 1.575a.6.6 0 0 1-.68.583l-1.561-.212c-2.054-.28-4.022-1.226-5.91-2.799-.598 3.31.57 5.603 3.383 7.372l1.747 1.098a.6.6 0 0 1 .034.993L7.793 18.17c.947.059 1.846.017 2.592-.131 4.718-.942 7.855-4.492 7.855-10.348 0-.478-1.012-2.141-2.94-2.141zm-4.9 2.81a4.9 4.9 0 0 1 8.385-3.355c.711-.005 1.316.175 2.669-.645-.335 1.64-.5 2.352-1.214 3.331 0 7.642-4.697 11.358-9.463 12.309-3.268.652-8.02-.419-9.382-1.841.694-.054 3.514-.357 5.144-1.55C5.16 15.7-.329 12.47 3.278 3.786c1.693 1.977 3.41 3.323 5.15 4.037 1.158.475 1.442.465 1.973.538z" />
+                        </svg>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="mailto:thejunni01@gmail.com" target="_blank" class="home__social-link">
+                        <svg class="common-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                            height="24">
+                            <path fill="none" d="M0 0h24v24H0z" />
+                            <path
+                                d="M3 3h18a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm17 4.238l-7.928 7.1L4 7.216V19h16V7.238zM4.511 5l7.55 6.662L19.502 5H4.511z" />
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://devfolio.co/@Junaidhassan" target="_blank" class="home__social-link">
+                        <svg class="common-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                            height="24">
+                            <path fill="none" d="M0 0h24v24H0z" />
+                            <path
+                                d="M6.414 16L16.556 5.858l-1.414-1.414L5 14.586V16h1.414zm.829 2H3v-4.243L14.435 2.322a1 1 0 0 1 1.414 0l2.829 2.829a1 1 0 0 1 0 1.414L7.243 18zM3 20h18v2H3v-2z" />
+                        </svg>
+                    </a>
+                </li>
+
+
+            </ul>
+            <p class="footer__copy">
+                <span>&copy;</span>
+                <span>Copyright Junaid. All rights reserved</span>
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!--Typing animation-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"
+        integrity="sha512-BdHyGtczsUoFcEma+MfXc71KJLv/cd+sUsUaYYf2mXpfG/PtBjNXsPo78+rxWjscxUYN2Qr2+DbeGGiJx81ifg=="
+        crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/ityped@0.0.10"></script>
+
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <svg class="scroll-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+            <path fill="none" d="M0 0h24v24H0z" />
+            <path d="M13 7.828V20h-2V7.828l-5.364 5.364-1.414-1.414L12 4l7.778 7.778-1.414 1.414L13 7.828z" />
+        </svg>
+    </a>
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="script/swiper-bundle.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="script/scrollreveal.min.js"></script>
+
+    <!--=============== EMAIL JS ===============-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="script/script.js" defer></script>
+
+    <!--=============== CHAT BOT===============-->
+    <script src="https://widget.cxgenie.ai/widget.js" data-aid="6ab4ab0e-c17f-4d0e-a1c0-1a0b03cd6d52" data-lang="en" data-hide-widget-button="true"></script>
+</body>
+
+</html>
