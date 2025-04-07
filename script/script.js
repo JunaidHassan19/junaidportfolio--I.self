@@ -62,7 +62,6 @@ const scrollUp = () => {
 };
 window.addEventListener("scroll", scrollUp);
 
-
 // /*=============== DARK LIGHT THEME ===============*/
 // const themeButton = document.getElementById("theme-button");
 // const darkTheme = "dark-theme";
@@ -73,7 +72,7 @@ window.addEventListener("scroll", scrollUp);
 // const getCurrentTheme = () =>
 //   document.body.classList.contains(darkTheme) ? "dark" : "light";
 //     themeButton.addEventListener('click', function() {
-    
+
 //          sunIcon.style.display= "block"
 //          themeButton.style.display = "none";
 //     })
@@ -81,10 +80,9 @@ window.addEventListener("scroll", scrollUp);
 //     sunIcon.addEventListener('click', function(){
 //       sunIcon.style.display= "none"
 //       themeButton.style.display = "block";
-      
 
 //     })
-  
+
 // themeButton.addEventListener("click", () => {
 //   document.body.classList.toggle(darkTheme);
 //   localStorage.setItem("selected-theme", getCurrentTheme());
@@ -94,10 +92,6 @@ window.addEventListener("scroll", scrollUp);
 //   document.body.classList.toggle(darkTheme);
 //   localStorage.setItem("selected-theme", getCurrentTheme());
 // });
-
-
-
-
 
 const themeButton = document.getElementById("theme-button");
 
@@ -116,7 +110,6 @@ themeButton.addEventListener("click", function () {
   localStorage.setItem("theme", theme);
 });
 
-
 const sr = ScrollReveal({
   origin: "top",
   distance: "60px",
@@ -126,13 +119,19 @@ const sr = ScrollReveal({
 sr.reveal(`.home__data, .project-card, .card-wrapper`);
 sr.reveal(`.home__info div`, { delay: 600, origin: "bottom", interval: 100 });
 
-sr.reveal(`.skills__content:nth-child(1), .about__img ,.contact__content:nth-child(1)`, {
-  origin: "left",
-});
+sr.reveal(
+  `.skills__content:nth-child(1), .about__img ,.contact__content:nth-child(1)`,
+  {
+    origin: "left",
+  }
+);
 sr.reveal(`.skills__content:nth-child(2), .contact__content:nth-child(2)`, {
   origin: "right",
 });
-sr.reveal(`.footer__container, .banner__social `, { interval: 100, origin: "bottom", });
+sr.reveal(`.footer__container, .banner__social `, {
+  interval: 100,
+  origin: "bottom",
+});
 
 const filterButtons = document.querySelector("#filter-btns").children;
 const items = document.querySelector(".project-listing").children;
@@ -225,39 +224,43 @@ const swiper = new Swiper(".slide-content", {
   },
 });
 
-
-
-
-
 const contactForm = document.getElementById("contact-form"),
   contactName = document.getElementById("contact-name"),
   contactEmail = document.getElementById("contact-email"),
   contactProject = document.getElementById("contact-project");
 contactMessage = document.getElementById("contact-message");
 sendBtn = document.getElementById("send_btn");
-let contactModal = document.getElementById('contact-modal');
-let thanksMsg = document.getElementById('thanks-msg');
-let closeContactBtn = document.getElementById('close-contact')
+let contactModal = document.getElementById("contact-modal");
+let thanksMsg = document.getElementById("thanks-msg");
+let closeContactBtn = document.getElementById("close-contact");
 closeContactBtn.onclick = function () {
   contactModal.style.display = "none";
 };
-const sendEmail = (e)=> {
-  e.preventDefault()
-  if(contactName.value === ''|| contactEmail.value=== '' || contactProject.value === '') {
-    contactMessage.classList.remove('color-blue')
-    contactMessage.classList.add('color-red')
+const sendEmail = (e) => {
+  e.preventDefault();
+  if (
+    contactName.value === "" ||
+    contactEmail.value === "" ||
+    contactProject.value === ""
+  ) {
+    contactMessage.classList.remove("color-blue");
+    contactMessage.classList.add("color-red");
 
-    contactMessage.textContent = 'Wrie all the input fields'
-
-  }
-
-  else {
+    contactMessage.textContent = "Wrie all the input fields";
+  } else {
     // service id / template id  /form_id / formPublic key
-    emailjs.sendForm('service_tphmlox', 'template_t6lyt1o', '#contact-form', 'Hhp-G121AyKXZZGYE')
-    .then( ()=> {
-    setTimeout(() => {
-      contactModal.style.display = "block";
-      thanksMsg.innerHTML = `
+    emailjs
+      .sendForm(
+        "service_tphmlox",
+        "template_t6lyt1o",
+        "#contact-form",
+        "Hhp-G121AyKXZZGYE"
+      )
+      .then(
+        () => {
+          setTimeout(() => {
+            contactModal.style.display = "block";
+            thanksMsg.innerHTML = `
      
     <div class="thanks__container">
       <h3 class="success_msg">Form submitted successfully!!</h3>
@@ -272,11 +275,11 @@ const sendEmail = (e)=> {
         <p>I will get back to you as early as possible.</p>
    </div>
        `;
-    contactMessage.textContent = "";
-    contactName.value = ''
-    contactEmail.value = ''
-    contactProject.value = ''
-    sendBtn.innerHTML = `
+            contactMessage.textContent = "";
+            contactName.value = "";
+            contactEmail.value = "";
+            contactProject.value = "";
+            sendBtn.innerHTML = `
     Send
     <svg class="send-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
     height="24">
@@ -284,13 +287,13 @@ const sendEmail = (e)=> {
     <path
         d="M1.923 9.37c-.51-.205-.504-.51.034-.689l19.086-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.475.553-.717.07L11 13 1.923 9.37zm4.89-.2l5.636 2.255 3.04 6.082 3.546-12.41L6.812 9.17z" />
     </svg>
-    `
-    }, 300);
-
-    }, (error)=> {
-      setTimeout(() => {
-        contactModal .style.display = "block";
-        thanksMsg.innerHTML = `
+    `;
+          }, 300);
+        },
+        (error) => {
+          setTimeout(() => {
+            contactModal.style.display = "block";
+            thanksMsg.innerHTML = `
        
       <div class="thanks__container">
         <h3 class="error_msg">Couldn't send your message!!</h3>
@@ -320,7 +323,7 @@ const sendEmail = (e)=> {
           
      </div>
          `;
-      sendBtn.innerHTML = `
+            sendBtn.innerHTML = `
       Send
       <svg class="send-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
                                     height="24">
@@ -328,36 +331,22 @@ const sendEmail = (e)=> {
                                     <path
                                         d="M1.923 9.37c-.51-.205-.504-.51.034-.689l19.086-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.475.553-.717.07L11 13 1.923 9.37zm4.89-.2l5.636 2.255 3.04 6.082 3.546-12.41L6.812 9.17z" />
                                 </svg>
-      `
-      }, 300);
-    }) 
-    sendBtn.innerHTML= `Sending..
+      `;
+          }, 300);
+        }
+      );
+    sendBtn.innerHTML = `Sending..
     <svg class="dynamic-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M16.004 9.414l-8.607 8.607-1.414-1.414L14.589 8H7.004V6h11v11h-2V9.414z"/></svg>
     
-    `
+    `;
   }
-
-}
-contactForm.addEventListener('submit', sendEmail)
-sendBtn.addEventListener('click', sendEmail)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+};
+contactForm.addEventListener("submit", sendEmail);
+sendBtn.addEventListener("click", sendEmail);
 
 var modal = document.getElementById("myModal");
 let snakeBtn = document.getElementById("snake-cta");
-let firstportBtn = document.getElementById("firstport-cta")
+let firstportBtn = document.getElementById("firstport-cta");
 let portfolioBtn = document.getElementById("portfolio-cta");
 let chatbotBtn = document.getElementById("chatbot-cta");
 // let clockBtn = document.getElementById("clock-cta");
@@ -369,7 +358,6 @@ let discordBtn = document.getElementById("discord-cta");
 
 var span = document.getElementsByClassName("close")[0];
 let modalData = document.getElementById("modal-info");
-
 
 snakeBtn.onclick = function () {
   modal.style.display = "block";
@@ -388,8 +376,6 @@ snakeBtn.onclick = function () {
  `;
 };
 
-
-
 firstportBtn.onclick = function () {
   modal.style.display = "block";
   modalData.innerHTML = `
@@ -407,8 +393,6 @@ firstportBtn.onclick = function () {
  `;
 };
 
-
-
 portfolioBtn.onclick = function () {
   modal.style.display = "block";
   modalData.innerHTML = ` <div class="projectInfoContainer">
@@ -425,8 +409,6 @@ portfolioBtn.onclick = function () {
   
   </div>`;
 };
-
-
 
 chatbotBtn.onclick = function () {
   modal.style.display = "block";
@@ -446,8 +428,6 @@ chatbotBtn.onclick = function () {
   </div>`;
 };
 
-
-
 // clockBtn.onclick = function () {
 //   modal.style.display = "block";
 //   modalData.innerHTML = ` <div class="projectInfoContainer">
@@ -455,19 +435,16 @@ chatbotBtn.onclick = function () {
 //   <div class="projectImage">
 //   <video src="-----------" loop controls autoplay muted></video>
 
-
 //   </div>
 //   <p class="projectInfo"> ========add dis.=============
 //   </p>
-  
+
 //   <div class="getCodeLink">
 //     <a href="------------" class="cv__btn">View Code</a>
 //   </div>
-  
+
 //   </div>`;
 // };
-
-
 
 gridBtn.onclick = function () {
   modal.style.display = "block";
@@ -486,8 +463,6 @@ gridBtn.onclick = function () {
 </div>`;
 };
 
-
-
 youtubeBtn.onclick = function () {
   modal.style.display = "block";
   modalData.innerHTML = `<div class="projectInfoContainer">
@@ -504,7 +479,6 @@ youtubeBtn.onclick = function () {
   
   </div>`;
 };
-
 
 googleBtn.onclick = function () {
   modal.style.display = "block";
@@ -526,7 +500,6 @@ googleBtn.onclick = function () {
  `;
 };
 
-
 moreBtn.onclick = function () {
   modal.style.display = "block";
   modalData.innerHTML = `
@@ -546,7 +519,6 @@ moreBtn.onclick = function () {
   </div>
  `;
 };
-
 
 discordBtn.onclick = function () {
   modal.style.display = "block";
@@ -574,11 +546,11 @@ function openCXGenieChatWidget() {
   window.openCXGenieChatWidget();
 }
 
-document.getElementById('chatButton').addEventListener('click', openCXGenieChatWidget);
+document
+  .getElementById("chatButton")
+  .addEventListener("click", openCXGenieChatWidget);
 
 /****==========================chat bot======================**** */
-
-
 
 span.onclick = function () {
   modal.style.display = "none";
